@@ -2224,6 +2224,7 @@ video {
             <button type="button" class="hub-nav-btn" data-hub-nav="pronunciation">&#128266; Wymowa</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="writing">&#128214; Teksty</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="exercises">&#128203; &Cacute;wiczenia</button>
+            <button type="button" class="hub-nav-btn" data-hub-nav="games">&#127918; Gry</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="sentences">&#9997;&#65039; Zdania</button>
         </nav>
         <!-- === HUB MODULE - END (nav) === -->
@@ -2696,6 +2697,33 @@ video {
             </div>
         </section>
         <!-- === HUB MODULE - END (exercises view) === -->
+        <!-- === HUB MODULE - START (games view) === -->
+        <section id="hub-games-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
+            <div class="hub-shell">
+                <div class="hub-topbar"></div>
+                <div class="hub-inner">
+
+                    <div class="hub-head">
+                        <h2 class="hub-title">Gry</h2>
+                        <p class="hub-tagline">Gry z angielskim do zagrania na telefonie albo komputerze.</p>
+                    </div>
+
+                    <div id="hub-games-list"></div>
+
+                    <div class="hub-footer">
+                        <button type="button" class="hub-link-btn" data-hub-nav="home">&larr; Powr&oacute;t</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div id="hub-game-overlay" class="no-print" style="position:fixed; inset:0; z-index:9999; background:#fff; display:none; flex-direction:column;">
+            <div style="display:flex; justify-content:flex-end; padding:6px 10px; border-bottom:1px solid #ddd; background:#f7f7f7;">
+                <button type="button" class="hub-link-btn" id="hub-game-close">&#10005; Zamknij gr&#281;</button>
+            </div>
+            <iframe id="hub-game-frame" title="Gra" style="flex:1; width:100%; border:0;"></iframe>
+        </div>
+        <!-- === HUB MODULE - END (games view) === -->
         <!-- === HUB MODULE - START (sentences view) === -->
         <section id="hub-sentences-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
             <div class="hub-shell">
@@ -3546,6 +3574,24 @@ video {
                                     "sentenceWithGap": "Because of her excellent grades, she got a [gap] which pays for all her studies abroad.",
                                     "firstLetterHint": "s"
                         }
+            ],
+            "Lekcja 4 (22.10)": [
+                        {
+                                    "word": "so far",
+                                    "translation": "jak dotąd, do tej pory",
+                                    "definition": "Until now.",
+                                    "pos": "adv",
+                                    "sentenceWithGap": "We've only read two chapters of the book [gap], but we'll finish it next week.",
+                                    "firstLetterHint": "s"
+                        },
+                        {
+                                    "word": "recently",
+                                    "translation": "ostatnio, niedawno",
+                                    "definition": "Not long ago.",
+                                    "pos": "adv",
+                                    "sentenceWithGap": "I haven't seen Ola [gap]; she's been ill for the last two weeks.",
+                                    "firstLetterHint": "r"
+                        }
             ]
 };
 
@@ -3558,8 +3604,8 @@ video {
         "teacherWhatsApp": "48728489622",
         "storageKey": "hub_dawid-d_2026-10",
         "studentKey": "hub_dawid-d",
-        "stamp": "aktualizacja po lekcji 3, 15.10.2026",
-        "lastLessonPhrase": "lekcji 3",
+        "stamp": "aktualizacja po lekcji 4, 15.10.2026",
+        "lastLessonPhrase": "lekcji 4",
         "lessons": [
                 {
                         "label": "Lekcja 1",
@@ -3584,6 +3630,14 @@ video {
                         "vocabCount": 30,
                         "extraVocabCount": 0,
                         "topic": "Czasy Perfect od strony teorii: Present Perfect Simple i Continuous oraz Past Perfect Simple i Continuous. Słownictwo: szkoła."
+                },
+                {
+                        "label": "Lekcja 4",
+                        "dateLabel": "22.10.2026",
+                        "categoryKey": "Lekcja 4 (22.10)",
+                        "vocabCount": 2,
+                        "extraVocabCount": 0,
+                        "topic": "Czasy Perfect: ćwiczenia z podręcznika (Unit 3, Grammar Reference, str. 260-261, zad. 1-4)"
                 }
         ],
         "grammar": [
@@ -3872,6 +3926,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "A: How [gap] your football match yesterday?",
@@ -3996,6 +4051,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "1. Your free time",
@@ -4028,6 +4084,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "1. We / cross the street / when / a car / suddenly stop / in front of us / .",
@@ -4060,6 +4117,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "• Explain how you got to the festival.\nMy cousin Bartek [gap] (pick) me up at 6 a.m. and we",
@@ -4189,6 +4247,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": true,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "1. [gap] (Czekałem na autobus) when it started to snow.",
@@ -4309,6 +4368,7 @@ video {
                                 "pedestrian crossing"
                         ],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "Dawid is sitting in the driver's seat. He's nervous because today is his [gap].",
@@ -4417,6 +4477,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "[gap] (Przechodziłem obok) the new clothes shop when I noticed that they had a half price sale on.",
@@ -4520,6 +4581,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "I'm exhausted. We [gap] (train) in the sports hall since four o'clock.",
@@ -4638,6 +4700,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "When I got to the sports hall, the match [gap] (already / start).",
@@ -4755,6 +4818,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "I [gap] (play) volleyball for three years now, and I love it.",
@@ -4881,6 +4945,7 @@ video {
                         ]
                 }
         ],
+        "games": [],
         "distractors": [
                 {
                         "word": "dashboard",
@@ -5076,6 +5141,26 @@ video {
                         "word": "sign up",
                         "translation": "zapisać się",
                         "pos": "phr"
+                },
+                {
+                        "word": "ago",
+                        "translation": "temu",
+                        "pos": "adv"
+                },
+                {
+                        "word": "yesterday",
+                        "translation": "wczoraj",
+                        "pos": "adv"
+                },
+                {
+                        "word": "tomorrow",
+                        "translation": "jutro",
+                        "pos": "adv"
+                },
+                {
+                        "word": "soon",
+                        "translation": "wkrótce",
+                        "pos": "adv"
                 }
         ],
         "priorityVerbs": [],
@@ -5602,6 +5687,18 @@ video {
                         "lessons": [
                                 "Lekcja 3"
                         ]
+                },
+                {
+                        "word": "so far",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "recently",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
                 }
         ],
         "sentenceCount": 5,
@@ -5620,6 +5717,11 @@ video {
                         "lessonLabel": "Lekcja 3",
                         "dateLabel": "15.10.2026",
                         "text": "Przeczytaj sobie podsumowanie czasów wraz z przykładami w zakładce „Gramatyka”. Obejrzyj filmik. Zrób zadania w zakładce „Ćwiczenia”. Ćwicz słówka z podręcznika, korzystając z fiszek i testów - masz Unity 1-3."
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "dateLabel": "22.10.2026",
+                        "text": "Najpierw zrób zadania z zakładki Ćwiczenia z Lekcji 3 (15.10), a potem czytanie z Próbnego Arkusza Maturalnego MP01."
                 }
         ]
 };
@@ -7058,6 +7160,7 @@ video {
         var PRONUNCIATION = HUB.pronunciation || [];
         var WRITING = HUB.writingSpeaking || [];
         var EXERCISES = HUB.exercises || [];
+        var GAMES = HUB.games || [];
         // Tryb pliku. "month" to hub miesieczny ucznia (slownictwo z jego lekcji,
         // gramatyka, wymowa, zdania, czasowniki). "unit" to strona jednego dzialu
         // z podrecznika: te same fiszki i ten sam test, tylko karmione slownictwem
@@ -7242,11 +7345,12 @@ video {
             pronunciation: 'hub-pronunciation-view',
             writing:       'hub-writing-view',
             exercises:     'hub-exercises-view',
-            sentences:     'hub-sentences-view'
+            sentences:     'hub-sentences-view',
+            games:         'hub-games-view'
         };
         var ALL_VIEW_IDS = [
             'hub-home-view', 'flashcards-view', 'config-view',
-            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view',
+            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view', 'hub-games-view',
             'path-selection-view', 'student-start-view', 'quiz-view'
         ];
 
@@ -7356,6 +7460,7 @@ video {
                 { key: 'pronunciation', icon: '🔊', label: 'Wymowa',    sub: count(PRONUNCIATION.length, 'słówko', 'słówka', 'słówek') + ' do posłuchania', count: PRONUNCIATION.length },
                 { key: 'writing',       icon: '📖', label: 'Teksty', sub: count(WRITING.length, 'tekst', 'teksty', 'tekstów') + ' do przeczytania/napisania', count: WRITING.length },
                 { key: 'exercises',     icon: '📋', label: 'Ćwiczenia', sub: count(EXERCISES.length, 'ćwiczenie', 'ćwiczenia', 'ćwiczeń') + ' z lukami', count: EXERCISES.length },
+                { key: 'games',         icon: '🎮', label: 'Gry', sub: count(GAMES.length, 'gra', 'gry', 'gier') + ' do zagrania', count: GAMES.length },
                 { key: 'sentences',     icon: '✍️', label: 'Ułóż zdania', sub: count(SENT_COUNT, 'słówko', 'słówka', 'słówek') + ' z puli ' + SENT_POOL.length + ', losowo', count: SENT_POOL.length }
             ];
             // Kafelek czasownikow inaczej wyszedlby na stronie Unitu aktywny, bo
@@ -7871,10 +7976,65 @@ video {
         }
         function exAccepted(a) { return Array.isArray(a) ? a : [a]; }
         // layout "transform": cale zdanie, wiec kropka/wykrzyknik na koncu nie decyduje.
-        function exMatch(ex, a, v) {
+        // Tolerancja wpisywanych odpowiedzi (decyzja Grzecha 2026-10-17, wszyscy uczniowie):
+        // brak/nadmiar interpunkcji i apostrofow, wersja AmE/BrE oraz drobna literowka
+        // (1 znak w jednym slowie od 5 liter) licza sie jako poprawne. Literowka NIE
+        // obejmuje koncowek -s/-es/-d/-ed/-n, bo to blad gramatyczny. Synonimy dopisuje
+        // sie do answers w hub_input.json. Luki do klikniecia i cwiczenia z
+        // "strict": true (np. "popraw pisownie") porownuja sie dokladnie, jak dawniej.
+        var EX_US_UK = { gray: 'grey', program: 'programme', check: 'cheque', tire: 'tyre', pajamas: 'pyjamas',
+            mom: 'mum', math: 'maths', aluminum: 'aluminium', jewelry: 'jewellery', plow: 'plough', donut: 'doughnut',
+            catalog: 'catalogue', dialog: 'dialogue', analog: 'analogue', skeptical: 'sceptical', mustache: 'moustache',
+            gotten: 'got', fall: 'autumn', apartment: 'flat', vacation: 'holiday', cookie: 'biscuit', cookies: 'biscuits' };
+        function exLoose(x) {
+            return exNorm(x).replace(/can't/g, 'cannot').replace(/won't/g, 'will not').replace(/n't/g, ' not')
+                .replace(/'re /g, ' are ').replace(/'ve /g, ' have ').replace(/'m /g, ' am ').replace(/'ll /g, ' will ').replace(/'/g, '').replace(/[.,!?;:"()“”„–—-]+/g, ' ')
+                .replace(/\s+/g, ' ').trim().split(' ').map(function (w) {
+                    if (EX_US_UK[w]) return EX_US_UK[w];
+                    return w.replace(/^([a-z]*(col|fav|flav|hon|hum|lab|neighb|beh|harb|rum|vap|arm|rig|vig))or(s|ed|ing|ite|ites|ful|able|ly|hood)?$/, '$1our$3')
+                        .replace(/([a-z]{2})(i|y)z(e|es|ed|ing|ation|ations)$/, '$1$2s$3')
+                        .replace(/^(cent|theat|met|lit|fib|kilomet|centimet|millimet)er(s)?$/, '$1re$2')
+                        .replace(/([aeiou])l(ed|ing|er|ers)$/, '$1ll$2');
+                }).join(' ');
+        }
+        function exLev(a, b) {
+            if (Math.abs(a.length - b.length) > 1) return 2;
+            // Damerau: zamiana dwoch sasiednich liter (littel) to tez jedna literowka.
+            var pp = [], prev = [], cur, i, j;
+            for (j = 0; j <= b.length; j++) prev[j] = j;
+            for (i = 1; i <= a.length; i++) {
+                cur = [i];
+                for (j = 1; j <= b.length; j++) {
+                    cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+                    if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) cur[j] = Math.min(cur[j], pp[j - 2] + 1);
+                }
+                pp = prev; prev = cur;
+            }
+            return prev[b.length];
+        }
+        function exTypoOk(x, v) {
+            var xw = x.split(' '), vw = v.split(' '), diffs = 0;
+            if (xw.length !== vw.length) return false;
+            for (var i = 0; i < xw.length; i++) {
+                if (xw[i] === vw[i]) continue;
+                var p = xw[i], q = vw[i];
+                if (p.length < 5 || q.length < 5) return false;
+                var lo = p.length <= q.length ? p : q, hi = p.length <= q.length ? q : p;
+                if (hi.indexOf(lo) === 0 && /^(s|es|d|ed|n)$/.test(hi.slice(lo.length))) return false;
+                if (exLev(p, q) > 1) return false;
+                diffs++;
+            }
+            return diffs <= 1;
+        }
+        function exMatch(ex, a, v, choice) {
             var f = ex && ex.layout === 'transform'
                 ? function (x) { return exNorm(x).replace(/\s*[.!?]+$/, ''); } : exNorm;
-            return !!String(v || '').trim() && exAccepted(a).some(function (x) { return f(x) === f(v); });
+            if (!String(v || '').trim()) return false;
+            var acc = exAccepted(a);
+            if (acc.some(function (x) { return f(x) === f(v); })) return true;
+            if (choice || (ex && ex.strict)) return false;
+            var lv = exLoose(v);
+            return !!lv && acc.some(function (x) { var lx = exLoose(x); return lx === lv || exTypoOk(lx, lv); });
         }
         function exLoad() {
             try { var o = JSON.parse(safeGet(EX_KEY) || '{}'); return (o && typeof o === 'object') ? o : {}; }
@@ -7928,7 +8088,7 @@ video {
                     total++;
                     var val = st.v[itIdx + '-' + gap] || '';
                     if (String(val).trim()) filled++;
-                    var good = exMatch(ex, a, val) && (ex.layout !== 'transform' || st.ic[itIdx]);
+                    var good = exMatch(ex, a, val, exIsChoice(ex, itIdx, gap)) && (ex.layout !== 'transform' || st.ic[itIdx]);
                     if (good) ok++;
                     else wrong.push({
                         num: ex.layout === 'sort' ? it.text
@@ -8170,7 +8330,8 @@ video {
                 return EXERCISES[+g.getAttribute('data-ex')].items[+g.getAttribute('data-it')].answers[+g.getAttribute('data-gap')];
             }
             function okValue(g, v) {
-                return exMatch(EXERCISES[+g.getAttribute('data-ex')], answerOf(g), v);
+                var ex = EXERCISES[+g.getAttribute('data-ex')];
+                return exMatch(ex, answerOf(g), v, exIsChoice(ex, +g.getAttribute('data-it'), +g.getAttribute('data-gap')));
             }
             function isLocked(g, st) {
                 if (st.checked) return true;
@@ -10247,6 +10408,53 @@ video {
         }
 
         // ==========================================
+        // Gry: osadzony HTML otwierany w pelnoekranowej ramce
+        // ==========================================
+        var gameUrl = null;
+        function renderGames() {
+            var box = el('hub-games-list');
+            if (!box) return;
+            if (!GAMES.length) {
+                box.innerHTML = '<p class="hub-tagline">Na razie nie ma tu gier.</p>';
+            } else {
+                box.innerHTML = '<div class="hub-links">' + GAMES.map(function (g, i) {
+                    return '<button type="button" class="hub-link-tile" data-hub-game="' + i + '" style="cursor:pointer; text-align:left; width:100%">' +
+                        '<span>🎮 <strong>' + escapeHtml(g.title) + '</strong>' +
+                        (g.description ? '<br><span class="hub-tile-sub">' + escapeHtml(g.description) + '</span>' : '') +
+                        '</span></button>';
+                }).join('') + '</div>';
+            }
+            // Przycisk nawigacji znika, gdy nie ma gier - pusta zakladka nic nie daje.
+            var navBtn = document.querySelector('.hub-nav-btn[data-hub-nav="games"]');
+            hideIf(!GAMES.length, navBtn);
+            box.addEventListener('click', function (e) {
+                var b = e.target.closest ? e.target.closest('[data-hub-game]') : null;
+                if (b) openGame(parseInt(b.getAttribute('data-hub-game'), 10));
+            });
+            var close = el('hub-game-close');
+            if (close) close.addEventListener('click', closeGame);
+        }
+        function openGame(i) {
+            var g = GAMES[i];
+            if (!g) return;
+            stopSpeaking();
+            var bin = atob(g.html64);
+            var bytes = new Uint8Array(bin.length);
+            for (var k = 0; k < bin.length; k++) bytes[k] = bin.charCodeAt(k);
+            if (gameUrl) URL.revokeObjectURL(gameUrl);
+            gameUrl = URL.createObjectURL(new Blob([bytes], { type: 'text/html;charset=utf-8' }));
+            el('hub-game-frame').src = gameUrl;
+            el('hub-game-overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeGame() {
+            el('hub-game-overlay').style.display = 'none';
+            el('hub-game-frame').src = 'about:blank';
+            if (gameUrl) { URL.revokeObjectURL(gameUrl); gameUrl = null; }
+            document.body.style.overflow = '';
+        }
+
+        // ==========================================
         // Start
         // ==========================================
         function hubInit() {
@@ -10264,6 +10472,7 @@ video {
                 renderPronunciation();
                 renderWriting();
                 renderExercises();
+                renderGames();
 
                 loadSentences();
                 renderSentLessonChips();
